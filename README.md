@@ -26,7 +26,7 @@ php artisan storage:link
 
 ### Running Then App
 
-Upload the files to your document root, Valet folder or run
+Upload the files to your document root
 
 ```
 php artisan serve
