@@ -94,6 +94,11 @@ class DonateController extends Controller
     public function update(Request $request, DonationListing $donationlisting)
     {
         //
+
+        if ($donationlisting->user_id != auth()->id()) {
+            abort(403, 'Unauthorized Action');
+        }
+
         $form_fields = $request->validate([
             'title' => 'required',
             'tags' => 'required',

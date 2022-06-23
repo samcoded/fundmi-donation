@@ -2,11 +2,17 @@
 
 FundMi is platform to request for donations. create a donation and share link for others to donate to you.
 
+Logged users can create donation page and withdraw from their balance after people have donated to their page.
+
+Users can donate using their card or bank transfer. (Test in the live demo)
+
 ### Live demo
+
+[fundmi.herokuapp.com Hosted on Heroku](https://fundmi.herokuapp.com/)
 
 ### Tools
 
-Built with Laravel 9 and Paystack for Payment
+Built with Laravel 9, Postgres SQL and Paystack for Payment
 
 ### Migrations
 

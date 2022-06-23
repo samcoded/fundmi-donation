@@ -31,12 +31,22 @@
                                     (0%)
                                 @endunless
                             </span></div>
-
+                        <button class="bg-orange-400 text-white py-2 rounded-xl hover:opacity-80"
+                            onclick="copyLink()"><i class="fa-solid fa-share"></i>
+                            Copy link</button>
                         <a href="/donate/{{ $donation->id }}"
                             class="block bg-black text-white py-2 rounded-xl hover:opacity-80"><i
                                 class="fa-solid fa-dollar"></i>
                             Donate Now</a>
 
+
+                        <script type="text/javascript">
+                            function copyLink() {
+                                const urlcopy = "{{ url('/donate/' . $donation->id) }}";
+                                navigator.clipboard.writeText(urlcopy);
+                                alert('Link copied to clipboard');
+                            }
+                        </script>
                         <div class="block bg-laravel text-white mt-6 py-2 rounded-xl "><i class=""></i>
                             Donors: <span>{{ $donation->donors->count() }}</span></div>
 
