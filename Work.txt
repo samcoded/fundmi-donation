@@ -1,0 +1,71 @@
+Login
+signup
+forget
+Main screen with all the causes and filter with categories (filter my causes when logged in)
+view single causes
+list of donors
+donate
+profile
+
+->auth required
+edit profile
+edit account details
+withdraw funds
+add causes
+
+
+
+->database
+users
+	first name
+	last name
+	email
+	pass
+	dob
+	image
+	amount
+cats
+	name
+	description
+wallet
+	user
+	amount
+wallet transaction
+	user
+	amount
+	outbound (true or false)
+causes
+	title
+	description
+	target
+	status
+	image
+	user
+donations
+	name
+	amount
+withdrawals
+	user
+	amount
+	status
+admin 
+	name
+	email
+	pass
+
+->routes
+login
+signup
+social login
+reset pass
+edit account
+edit profile (admin)
+add cause
+edit cause (admin)
+delete cause (admin)
+add cat (admin+)
+edit cat (admin+)
+delete cat (admin+)
+donate 
+withdraw
+approve/cancel withdraw (admin+)
