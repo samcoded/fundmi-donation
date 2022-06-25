@@ -22,13 +22,9 @@ To create all the nessesary tables and columns, run the following
 php artisan migrate
 ```
 
-### File Uploading
+### Usage
 
-When uploading listing files, they go to "storage/app/public". Create a symlink with the following command to make them publicly accessible.
-
-```
-php artisan storage:link
-```
+Change the _.env.example_ to _.env_ and add your database info
 
 ### Running Then App
 
@@ -36,6 +32,15 @@ Upload the files to your document root
 
 ```
 php artisan serve
+
+```
+
+### File Uploading
+
+When uploading listing files, they go to "storage/app/public". Create a symlink with the following command to make them publicly accessible.
+
+```
+php artisan storage:link
 ```
 
 ### Author
